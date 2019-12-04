@@ -20,7 +20,9 @@ router.use(function(req, res, next) {
   consola.info({
     message: `Body: ${JSON.stringify(req.body)}`
   })
-    next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
 router.get('/', function(req, res ) {
