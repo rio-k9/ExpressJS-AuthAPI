@@ -92,7 +92,7 @@ module.exports = {
    * @memberof module:model/user~userModel
    */
   createUser: (db, user) => {
-    let createQuery = "UPDATE users (firstName, lastName, scope, email, password) VALUES (?, ?, ?, ?, ?)";
+    let createQuery = "INSERT INTO users (firstName, lastName, scope, email, password) VALUES (?, ?, ?, ?, ?)";
     let query = mysql.format(createQuery, [user.firstName, user.lastName, user.jobRole, user.username, user.password]);
     return new Promise((resolve, reject) => {
       db.query(query, (err, row) => {

@@ -4,9 +4,9 @@
  * @requires express
  * @requires jwt
  * @requires database
- * @requires _USER
+ * @requires model/user
  * {@link module:model/user}
- * @requires _AUTH
+ * @requires model/auth
  * {@link module:model/auth}
  */
 

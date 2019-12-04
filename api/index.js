@@ -1,7 +1,7 @@
 /**
  * Express router providing user authentication routes
  * @module api
- * @requires userApi
+ * @requires api/user
  * {@link module:api/user}
  */
 /**
