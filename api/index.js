@@ -1,4 +1,10 @@
 /**
+ * Express router providing user authentication routes
+ * @module api
+ * @requires userApi
+ * {@link module:api/user}
+ */
+/**
  * User API router module
  * @const
  */

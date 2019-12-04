@@ -5,7 +5,9 @@
  * @requires jwt
  * @requires database
  * @requires _USER
+ * {@link module:model/user}
  * @requires _AUTH
+ * {@link module:model/auth}
  */
 
  /**
