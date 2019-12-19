@@ -1,4 +1,4 @@
-
+const cors = require('cors')
 const express    = require('express');
 const app        = express();
 const bodyParser = require('body-parser');
@@ -8,7 +8,7 @@ const consola = require('consola')
 const port = process.env.PORT || 8080;
 const router = express.Router();
 const api = require(`${appRoot}/api`)
-
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
